@@ -4,6 +4,8 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  # STOPPED AT: 5.8 Listing all articles
+
   def new
   end
 
@@ -15,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   private
-  
+
   def article_params
     params.require(:article).permit(:title, :text)
   end
